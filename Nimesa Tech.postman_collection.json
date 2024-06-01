@@ -1,0 +1,473 @@
+{
+	"info": {
+		"_postman_id": "babefeca-4962-4424-b995-0fc736b4d28f",
+		"name": "Nimesa Tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29000984"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/discovery/discoverServices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    \"EC2\", \"S3\"\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discovery/discoverServices",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"discoverServices"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    \"EC2\", \"S3\"\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/discovery/discoverServices",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"discovery",
+								"discoverServices"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jun 2024 16:30:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "d8898abc-ae1e-423e-bf01-dbae1aca866a"
+				}
+			]
+		},
+		{
+			"name": "api/discovery/getJobResult/11aeeeaa-70f9-4e50-b963-3ae23e5a746d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/discovery/getJobResult/11aeeeaa-70f9-4e50-b963-3ae23e5a746d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"getJobResult",
+						"11aeeeaa-70f9-4e50-b963-3ae23e5a746d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/discovery/getDiscoveryResult/EC2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/discovery/getDiscoveryResult/EC2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"getDiscoveryResult",
+						"EC2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EC2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/discovery/getDiscoveryResult/EC2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"discovery",
+								"getDiscoveryResult",
+								"EC2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jun 2024 16:07:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"i-017e6519856f51d35\",\n    \"i-0d84e2f42c1069be6\",\n    \"i-04f8748ebcc51cf75\",\n    \"i-049ba798a61b88a0b\",\n    \"i-01d5daae2fbe5ed9d\"\n]"
+				},
+				{
+					"name": "S3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/discovery/getDiscoveryResult/S3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"discovery",
+								"getDiscoveryResult",
+								"S3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jun 2024 16:07:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"nimesaassignmentbucket1\",\n    \"nimesaassignmentbucket2\",\n    \"nimesaassignmentbucket3\",\n    \"nimesaassignmentbucket4\"\n]"
+				}
+			]
+		},
+		{
+			"name": "api/s3/getS3BucketObjects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bucketName\": \"nimesaassignmentbucket1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/s3/getS3BucketObjects",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"s3",
+						"getS3BucketObjects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"bucketName\": \"nimesaassignmentbucket4\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/s3/getS3BucketObjects",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"s3",
+								"getS3BucketObjects"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jun 2024 16:42:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "858ecabd-7e13-4c5a-a9f5-2af31c831bea"
+				}
+			]
+		},
+		{
+			"name": "s3/getS3BucketObjectCount/nimesaassignmentbucket2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/s3/getS3BucketObjectCount/nimesaassignmentbucket2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"s3",
+						"getS3BucketObjectCount",
+						"nimesaassignmentbucket2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/s3/getS3BucketObjectCount/nimesaassignmentbucket2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"s3",
+								"getS3BucketObjectCount",
+								"nimesaassignmentbucket2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jun 2024 16:46:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "0"
+				}
+			]
+		},
+		{
+			"name": "s3/getS3BucketObjectlike?bucketName=nimesaassignmentbucket4&pattern=*",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/s3/getS3BucketObjectlike?bucketName=nimesaassignmentbucket4&pattern=*",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"s3",
+						"getS3BucketObjectlike"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": "nimesaassignmentbucket4"
+						},
+						{
+							"key": "pattern",
+							"value": "*"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/s3/getS3BucketObjectlike?bucketName=nimesaassignmentbucket4&pattern=*",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"s3",
+								"getS3BucketObjectlike"
+							],
+							"query": [
+								{
+									"key": "bucketName",
+									"value": "nimesaassignmentbucket4"
+								},
+								{
+									"key": "pattern",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 01 Jun 2024 16:42:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				}
+			]
+		}
+	]
+}
